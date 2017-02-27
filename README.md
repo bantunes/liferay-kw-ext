@@ -31,7 +31,7 @@ login.events.post=pt.knowledgeworks.liferay.ext.event.ContainerLoginAction,com.l
 2. [optional] Add to the liferay property "logout.events.post" the class ContainerLogoutAction to the pipeline
 Example:
 ```
-logout.events.post=com.liferay.portal.events.LogoutPostAction,com.liferay.portal.events.DefaultLogoutPageAction,com.liferay.portal.events.SiteMinderLogoutAction
+logout.events.post=com.liferay.portal.events.LogoutPostAction,com.liferay.portal.events.DefaultLogoutPageAction,com.liferay.portal.events.SiteMinderLogoutAction,pt.knowledgeworks.liferay.ext.event.ContainerLooutAction
 ```
 
 **Info**
@@ -71,7 +71,7 @@ be changed to used external LDAP LoginModule.
 ### Notes on JBoss
 
 If using JBoss or WildFly its also necessary for enable SSO between Web Applications by default this is disabled.
-See: [Use Single Sign On (SSO) In A Web Application|https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Application_Platform/6.2/html/Security_Guide/Use_Single_Sign_On_SSO_In_A_Web_Application.html]
+See: [Use Single Sign On (SSO) In A Web Application](https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Application_Platform/6.2/html/Security_Guide/Use_Single_Sign_On_SSO_In_A_Web_Application.html)
 
 ### Notes on WebLogic Server
  
