@@ -73,6 +73,11 @@ be changed to used external LDAP LoginModule.
 If using JBoss or WildFly its also necessary for enable SSO between Web Applications by default this is disabled.
 See: [Use Single Sign On (SSO) In A Web Application](https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Application_Platform/6.2/html/Security_Guide/Use_Single_Sign_On_SSO_In_A_Web_Application.html)
 
+For "simple" standalone configurations, with default virtual host, simple jboss-cli, connect and type:
+'''
+/subsystem=web/virtual-server=default-host/sso=configuration:add(reauthenticate="false")
+'''
+
 ### Notes on WebLogic Server
  
 On WebLogic Server, if using same session cookie; by default this SSO enabled between web applications.
