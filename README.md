@@ -1,4 +1,4 @@
-# LIferay Portal KW Extentions
+# Liferay Portal KW Extentions
 
 A set of utilities for Liferay Portal
 
@@ -13,11 +13,13 @@ in order to perform authentication in Servlet container.
 A security domain / realm should be configured on web container associated with the Liferay Portal WebApp.
 
 When in using this functionality Liferay Portal is normally configured to authenticate users
-on external directory (such and LDAP Server). On Application Server we should perform necessary
+on external directory (for example a LDAP Server). On Application Server we should perform necessary
 configurations (according to Application Server in order to configure JAAS LoginModule to autenticate user
 in same directory.
 
-Notes: Tested with JBoss 7.5.* and WebLogic Server 12.1.2.*
+Notes:
+* Tested with JBoss 7.5.* and WebLogic Server 12.1.2.* but should work with any web container that supports Servlet API >= 3
+* Liferay Portal 6.*
 
 
 ### Configuration
@@ -81,5 +83,5 @@ For "simple" standalone configurations, with default virtual host, simple jboss-
 ### Notes on WebLogic Server
  
 On WebLogic Server, if using same session cookie; by default this SSO enabled between web applications.
-I using several WLS domain do not forget to [Enabling Trust Between WebLogic Server Domains](https://docs.oracle.com/cd/E24329_01/web.1211/e24422/domain.htm#SECMG404)
+When using several WLS domain do not forget to perform [Enabling Trust Between WebLogic Server Domains](https://docs.oracle.com/cd/E24329_01/web.1211/e24422/domain.htm#SECMG404)
 
